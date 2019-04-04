@@ -10,4 +10,8 @@ class MP3Importer
   def files
     Dir.children("./spec/fixtures/mp3s")
   end
+  
+  def import
+    
+  end
 end
