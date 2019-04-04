@@ -9,6 +9,7 @@ class Song
     name = file_name.split("-")[1].strip
     artist = file_name.split("-")[0].strip
     song = self.new(name)
-    Artist.
+    Artist.find_or_create_by_name(artist)
+    
   end
 end
