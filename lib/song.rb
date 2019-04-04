@@ -11,6 +11,6 @@ class Song
     song = self.new(name)
     artist = Artist.find_or_create_by_name(artist_name)
     song.artist = artist
-    artist.add
+    artist.add_song(song)
   end
 end
